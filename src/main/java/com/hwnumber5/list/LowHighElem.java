@@ -6,6 +6,7 @@ public class LowHighElem<T extends Comparable<? super T>> {
     public LowHighElem(T[] array) {
         this.elemList = array;
     }
+
     public T getBiggest() {
         T max = elemList[0];
         for (T t : elemList) {
@@ -15,10 +16,11 @@ public class LowHighElem<T extends Comparable<? super T>> {
         }
         return max;
     }
-    public T getMin(){
+
+    public T getMin() {
         T min = elemList[0];
-        for (T t: elemList) {
-            if (t.compareTo(min) < 0){
+        for (T t : elemList) {
+            if (t.compareTo(min) < 0) {
                 min = t;
             }
         }
